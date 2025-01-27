@@ -6,7 +6,7 @@ export default function HeroSection() {
     <>
       <div className="text-center">
         <div className="flex flex-col gap-5 my-10">
-        <span className="px-4 mx-auto py-2 rounded-full bg-gray-100 text-[#F83002] font-medium">
+        <span className="px-4 mx-auto py-2 shadow-xl rounded-full bg-gray-100 text-[#F83002] font-medium">
           No. 1 Job Hunt Website
           
         </span>

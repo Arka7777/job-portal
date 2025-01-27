@@ -11,11 +11,13 @@ export default function Navbar() {
     <>
       <div className="bg-white">
         <div className="flex items-center justify-between mx-auto max-w-7xl h-16">
-          <div className="lg:px-1">
+          <Link to="/">
+          <div className="lg:px-1 shadow-xl">
             <h1 className=" font-bold text-2xl">
               Job<span className="text-red-700">Portal</span>
             </h1>
           </div>
+          </Link>
           <div>
             <div className="flex items-center gap-2">
               <ul className="flex font-medium items-center gap-5">
@@ -25,14 +27,14 @@ export default function Navbar() {
                 
               </ul>
               {!user ? (
-                <div className="flex gap-2">
+                <div className="flex gap-2  ">
                   <Link to="/login">
-                    <button className=" border-[2px] border-transparent font-bold hover:bg-zinc-300 hover:text-red-600 rounded-sm px-1 py-1  ">
+                    <button className=" border-[2px] border-transparent font-bold shadow-xl hover:bg-zinc-300 hover:text-[#6A38C2] rounded-sm px-1 py-1  ">
                       Login
                     </button>
                   </Link>
                   <Link to="/signup">
-                    <button className="bg-black hover:bg-red-600 text-white rounded-sm font-medium px-1 border-[2px] border-transparent py-1 ">
+                    <button className="hover:bg-black bg-[#6A38C2] text-white rounded-sm font-medium px-1 shadow-xl border-[2px] border-transparent py-1 ">
                       Sign Up
                     </button>
                   </Link>

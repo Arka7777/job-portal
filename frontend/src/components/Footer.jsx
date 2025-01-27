@@ -6,6 +6,7 @@ export default function Footer() {
     <>
       <footer className="bg-gray-800 text-white py-6">
         <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+          <h2 className="font-bold text-xl">Job Hunt</h2>
           <p className="text-sm">
             &copy; 2024 Your Company. All rights reserved.
           </p>

@@ -5,7 +5,7 @@ import toast from "../toast";
 import axios from "axios";
 import { USER_API_END_POINT } from "../../../../utils/constant.js";
 import { useDispatch, useSelector } from "react-redux";
-import { setloading } from "../../redux/authslice.js";
+import { setloading, setUser } from "../../redux/authslice.js";
 import { AiOutlineLoading3Quarters } from "react-icons/ai"
 
 export default function Login() {
@@ -35,6 +35,7 @@ const dispatch=useDispatch()
       });
       console.log(res.data.success)
       if (res.data.success) {
+        dispatch(setUser(res.data.user));
         nevigate("/");
         // toast.success(res.data.message);
       }
